@@ -1,16 +1,14 @@
 <template>
     <div>
-        <!-- <img :src="`${publicPath}Code/${code}`" width="750px"/> -->
-        <!-- <pre> -->
-        <!-- </pre> -->
+        <img v-bind:src="`${publicPath}Placeholders/${imgSrc}`">
     </div>
 </template>
 
 <script>
 export default {
-    name: "QueryCode",
+    name: "QueryGraph",
     props: {
-        code: String
+        imgSrc: String
     },
     data() {
         return {

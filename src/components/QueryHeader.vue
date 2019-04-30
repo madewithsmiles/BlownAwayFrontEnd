@@ -1,6 +1,6 @@
 <template>
     <div class="queryHeader">
-        <h1>Hello from QueryHeader</h1>
+        <h1>{{header}}</h1>
         <!-- <h1>{v-bind:header}</h2> -->
     </div>
 </template>
@@ -18,5 +18,7 @@ export default {
 .queryHeader {
     background-color: cornflowerblue;
     color: white;
+    padding: 5px;
+    margin-bottom: 15px;
 }
 </style>
