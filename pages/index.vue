@@ -27,7 +27,7 @@
 
 <script>
 // import Logo from '~/components/Logo.vue'
-import App from '~/src/App.vues'
+import App from '~/src/App.vue'
 export default {
   components: {
     // Logo,
