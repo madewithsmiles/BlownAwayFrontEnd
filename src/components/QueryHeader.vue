@@ -1,5 +1,6 @@
 <template>
     <div class="queryHeader">
+        <h1>Hello from QueryHeader</h1>
         <!-- <h1>{v-bind:header}</h2> -->
     </div>
 </template>
@@ -9,9 +10,6 @@ export default {
     name: "QueryHeader",
     props: {
         header: String
-    },
-    data: {
-        header
     }
 }
 </script>
