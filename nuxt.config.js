@@ -2,7 +2,9 @@ import pkg from './package'
 
 export default {
   mode: 'spa',
-
+  router: {
+    base: '/BlownAwayFrontEnd/'
+  },
   /*
   ** Headers of the page
   */
