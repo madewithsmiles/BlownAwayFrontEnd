@@ -1,7 +1,8 @@
 <template>
   <section class="container">
     <div>
-      <logo />
+      <App />
+      <!-- <logo />
       <h1 class="title">
         blownawaypublic
       </h1>
@@ -19,17 +20,18 @@
           target="_blank"
           class="button--grey"
         >GitHub</a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+// import Logo from '~/components/Logo.vue'
+import App from '~/src/App.vues'
 export default {
   components: {
-    Logo
+    // Logo,
+    App
   }
 }
 </script>
