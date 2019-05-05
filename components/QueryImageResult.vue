@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img v-bind:src="`${publicPath}Placeholders/${imgSrc}`">
+        <img v-bind:src="`${assetPath}${imgSrc}`">
     </div>
 </template>
 
@@ -12,7 +12,8 @@ export default {
     },
     data() {
         return {
-            publicPath: process.env.BASE_URL
+            publicPath: process.env.BASE_URL,
+            assetPath: "~assets/"
         }
     }
 }

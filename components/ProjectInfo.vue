@@ -1,15 +1,10 @@
 <template>
-  <b-card align="center"> <!--border-variant="info"-->
-    <!-- header-bg-variant="primary"
-    header-text-variant="white"-->
-    <!-- <b-card-header style="background-color: #007bff !important; color: white">
-      <h2>Project Info</h2>
-    </b-card-header> -->
+  <b-card align="center">
     <h3 class="marginBottomPoint2Rem marginTop8 sienna">Topic</h3>
     <p
       class="inline pointfiverem"
     >Database project with visualizations of U.S. tornado + states GDP data from 1950 to 2017</p>
-    <hr />
+    <hr>
     <b-card-text>
       <h3 class="marginBottomPoint2Rem marginTop8 sienna">Goal</h3>
       <p class="pointfiverem">
@@ -17,30 +12,31 @@
         <em>frequency</em>,
         <em>magnitude</em>
         data of tornadoes,
-        and <em>GDP</em>
+        and
+        <em>GDP</em>
         per U.S. state
       </p>
-      <hr />
+      <hr>
       <h3 class="marginBottomPoint2Rem marginTop8 sienna">Datasets</h3>
       <ul class="pointfiverem" style="text-align: left;">
-          <li>
-            National Weather Service - Storm Prediciton Center Warning Coordination Meteorologist |
-            <a
+        <li>
+          National Weather Service - Storm Prediciton Center Warning Coordination Meteorologist |
+          <a
             class=".card-link"
             href="https://www.spc.noaa.gov/wcm/data/1950-2017_actual_tornadoes.csv"
             target="_blank"
             rel="noopener noreferrer"
-            >1950-2017_actual_tornadoes.csv (6.6 mb)</a>
-          </li>
-          <li>
-              State GDP Data | 
-              <a
-                class=".card-link"
-                href="https://apps.bea.gov/regional/downloadzip.cfm"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GDP per State</a>
-          </li>
+          >1950-2017_actual_tornadoes.csv (6.6 mb)</a>
+        </li>
+        <li>
+          State GDP Data |
+          <a
+            class=".card-link"
+            href="https://apps.bea.gov/regional/downloadzip.cfm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GDP per State</a>
+        </li>
       </ul>
     </b-card-text>
   </b-card>
@@ -94,6 +90,6 @@ export default {
 }
 
 .sienna {
-    color: #dd192c;
+  color: #dd192c;
 }
 </style>
