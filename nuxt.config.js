@@ -16,7 +16,14 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css' },
+      
+    ],
+    script: [
+      { src: "//polyfill.io/v3/polyfill.min.js?features=es2015%2CMutationObserver", crossorigin: "anonymous"},
+      { src: "//unpkg.com/vue@latest/dist/vue.min.js"},
+      { src: "//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"}
     ]
   },
 
@@ -29,12 +36,15 @@ export default {
   ** Global CSS
   */
   css: [
+    'bootstrap/dist/css/bootstrap.css',
+    'bootstrap-vue/dist/bootstrap-vue.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@/plugins/app.js'
   ],
 
   /*
@@ -44,6 +54,10 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
   ],
+
+  bootstrapVue: {
+    bootstrapCSS: true,
+  },
 
   /*
   ** Build configuration
