@@ -10,8 +10,33 @@
     <QuerySection 
       v-for="item in queries" 
       v-bind:header="item.header" 
-      v-bind:code="item.code" 
-      v-bind:key="item" 
+      v-bind:code="item.code"
+      v-bind:chartdata="item.chartdata"
+      v-bind:options="{ responsive: true, 
+                        maintainAspectRatio: false, 
+                        scales: { 
+                          yAxes: [{
+                            ticks: {
+                              beginAtZero: true,
+                              fontFamily: 'Open Sans',
+                              fontSize: 18
+                              }
+                          }],
+                          xAxes: [{
+                            ticks: {
+                              fontFamily: 'Open Sans',
+                              fontSize: 18
+                              }
+                          }]
+                        },
+                        legend: {
+                          labels: {
+                            fontFamily: 'Roboto',
+                            fontSize: 18
+                          }
+                        } 
+                      }" 
+      v-bind:key="item.header" 
     />
   </main>
 </template>
