@@ -16,9 +16,11 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "chart.js": "^2.8.0",
     "cross-env": "^5.2.0",
+    "highlight.js": "^9.15.6",
     "nuxt": "^2.4.0",
     "portal-vue": "^2.1.4",
-    "vue-chartjs": "^3.4.2"
+    "vue-chartjs": "^3.4.2",
+    "vue-highlight.js": "^3.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",

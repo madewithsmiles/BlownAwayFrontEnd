@@ -44,7 +44,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/app.js'
+    '~/plugins/app.js',
+    '~/plugins/highlight-plugin.js',
+    '~/plugins/highlight-directive.js'
   ],
 
   /*
