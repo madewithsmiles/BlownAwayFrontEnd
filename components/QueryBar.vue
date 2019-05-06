@@ -1,7 +1,7 @@
 <script>
 import { Bar } from "vue-chartjs";
 export default {
-  name: "QueryBar",
+  extends: Bar,
   props: {
     chartdata: {
       type: Object,
@@ -14,7 +14,7 @@ export default {
   },
   mounted() {
     this.renderChart(this.chartdata, this.options);
-  }
+  },
 };
 </script>
 
