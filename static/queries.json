@@ -52,8 +52,134 @@
             "rgb(75, 192, 192)",
             "rgb(54, 162, 235)",
             "rgb(153, 102, 255)",
-            "rgb(201, 203, 207), rgb(75,192,192)",
-            "rgb(192,75,75), rgb(75,253,132)"
+            "rgb(201, 203, 207)", 
+            "rgb(75,192,192)",
+            "rgb(192,75,75)", 
+            "rgb(75,253,132)"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "header": "Top 10 States by Average Magnitude of Tornadoes Since 1950",
+    "code": [
+      "SELECT",
+      "   s.StateName,",
+      "   AVG(t.Magnitude) ",
+      "FROM",
+      "   tornado t ",
+      "   INNER JOIN",
+      "      state s ",
+      "      ON t.StateID = s.StateID ",
+      "GROUP BY",
+      "   s.StatePostalCode ",
+      "ORDER BY",
+      "   AVG(t.Magnitude) DESC LIMIT 10;"
+    ],
+    "chartdata": {
+      "labels": [
+        "Arkansas",
+        "Kentucky",
+        "Tennessee",
+        "Massachusetts",
+        "Mississippi",
+        "Vermont",
+        "Alabama",
+        "Indiana",
+        "Connecticut",
+        "New Hampshire"
+      ],
+      "datasets": [
+        {
+          "label": "Average Magnitude",
+          "data": [
+            1.15491393670183,
+            1.12512820512821,
+            1.11730449251248,
+            1.09316770186335,
+            1.07110091743119,
+            1.06818181818182,
+            1.05487804878049,
+            1.05098572399728,
+            1.05,
+            1.02173913043478
+          ],
+          "fill": false,
+          "backgroundColor": [
+            "rgba(255, 99, 132, 0.9)",
+            "rgba(255, 159, 64, 0.9)",
+            "rgba(255, 205, 86, 0.9)",
+            "rgba(75, 192, 192, 0.9)",
+            "rgba(54, 162, 235, 0.9)",
+            "rgba(153, 102, 255, 0.9)",
+            "rgba(201, 203, 207, 0.9)",
+            "rgba(75,192,192, 0.9)",
+            "rgba(192,75,75,0.9)",
+            "rgba(75,253,132,0.9)"
+          ],
+          "borderColor": [
+            "rgb(255, 99, 132)",
+            "rgb(255, 159, 64)",
+            "rgb(255, 205, 86)",
+            "rgb(75, 192, 192)",
+            "rgb(54, 162, 235)",
+            "rgb(153, 102, 255)",
+            "rgb(201, 203, 207)", 
+            "rgb(75,192,192)",
+            "rgb(192,75,75)", 
+            "rgb(75,253,132)"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "header": "Top 5 States by Powerscore (Sum of all tornadoes magnitude)",
+    "code": [
+      "SELECT",
+"   s.StatePostalCode,",
+"   SUM(t.magnitude) AS PowerScore ",
+"FROM",
+"   tornado t ",
+"   INNER JOIN",
+"      state s ",
+"      ON t.StateID = s.StateID ",
+"GROUP BY",
+"   t.StateID ",
+"ORDER BY",
+"   PowerScore DESC LIMIT 5;"
+    ],
+    "chartdata": {
+      "labels": [
+        "Texas",
+"Oklahoma",
+"Kansas",
+"Mississippi",
+"Alabama"
+      ],
+      "datasets": [
+        {
+          "label": "Powerscore (Sum of all tornadoes magnitudes since 1950)",
+          "data": [    5782,
+            3056,
+            2679,
+            2335,
+            2249],
+          "fill": false,
+          "backgroundColor": [
+            "rgba(255, 99, 132, 0.9)",
+            "rgba(255, 159, 64, 0.9)",
+            "rgba(201, 203, 207, 0.9)",
+            "rgba(192,75,75,0.9)",
+            "rgba(75,253,132,0.9)"
+          ],
+          "borderColor": [
+            "rgb(255, 99, 132)",
+            "rgb(255, 159, 64)",
+            "rgb(201, 203, 207)",
+            "rgb(192,75,75)", 
+            "rgb(75,253,132)"
           ]
         }
       ]
