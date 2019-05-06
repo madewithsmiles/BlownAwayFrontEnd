@@ -1,9 +1,9 @@
 <template>
-    <v-footer absolute>
+    <footer absolute>
       <div class="myfooter">
         Made with ❤️ by Omicron Wow &copy; {{new Date().getFullYear() }}
       </div>
-    </v-footer>
+    </footer>
 </template>
 
 <script>
