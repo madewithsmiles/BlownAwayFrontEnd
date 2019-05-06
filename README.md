@@ -1,6 +1,6 @@
 # blownawaypublic
 
-> Database project Sp19
+Database project's small front end - Sp19 - See data processing at [this link](https://github.com/madewithsmiles/BlownAwayDBSP19)
 
 ## TODO
 - [x] Setup `queries.json` file and populate
