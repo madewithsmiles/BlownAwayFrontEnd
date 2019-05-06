@@ -1,0 +1,19 @@
+[
+  {
+    "header": "Top 10 States by Total Number of Tornadoes Since 1950",
+    "code": [
+      "SELECT",
+      "   s.StateName,",
+      "   COUNT(*) as TotalTornadosSince1950 ",
+      "FROM",
+      "   tornado t ",
+      "   INNER JOIN",
+      "      state s ",
+      "      ON t.StateID = s.StateID ",
+      "GROUP BY",
+      "   s.StatePostalCode ",
+      "ORDER BY",
+      "   count(*) DESC LIMIT 10;"
+    ]
+  }
+]

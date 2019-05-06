@@ -3,11 +3,9 @@
 </template>
 
 <script>
-// import Logo from '~/components/Logo.vue'
 import App from '~/components/App.vue'
 export default {
   components: {
-    // Logo,
     App
   }
 }
