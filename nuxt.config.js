@@ -18,7 +18,8 @@ export default {
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css' },
-      
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto'},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Open+Sans'},
     ],
     script: [
       { src: "//polyfill.io/v3/polyfill.min.js?features=es2015%2CMutationObserver", crossorigin: "anonymous"},
