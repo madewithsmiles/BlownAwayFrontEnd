@@ -1,17 +1,17 @@
 <template>
-    <b-row class="text-center">
-      <b-col></b-col>
-      <b-col cols="12">
-        <div class="myQuerySection">
-          <QueryHeader v-bind:header="header"/>
-          <!-- <QueryImageResult v-bind:imgSrc="imgSrc"/> -->
-          <QueryCode v-bind:code="getCode"/>
-          <!-- <QueryGraph v-bind:graph="graph"/> -->
-          <!-- <QueryBar v-bind:chartdata="chartdata" v-bind:options="options" /> -->
-        </div>
-      </b-col>
-      <b-col></b-col>
-    </b-row>
+  <b-row class="text-center">
+    <b-col></b-col>
+    <b-col cols="12">
+      <div class="myQuerySection">
+        <QueryHeader v-bind:header="header"/>
+        <!-- <QueryImageResult v-bind:imgSrc="imgSrc"/> -->
+        <QueryCode v-bind:code="getCode"/>
+        <!-- <QueryGraph v-bind:graph="graph"/> -->
+        <QueryBar v-bind:chartdata="chartdata" v-bind:options="options" style="height: 60vh; font-size: 18px"/>
+      </div>
+    </b-col>
+    <b-col></b-col>
+  </b-row>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ import BCol from "bootstrap-vue/es/components/layout/col";
 import QueryHeader from "./QueryHeader";
 import QueryImageResult from "./QueryImageResult";
 import QueryCode from "./QueryCode";
-import QueryBar from './QueryBar';
+import QueryBar from "./QueryBar";
 // import QueryGraph from "./QueryGraph";
 
 export default {
@@ -34,7 +34,7 @@ export default {
     QueryImageResult,
     QueryCode,
     // QueryGraph
-    QueryBar,
+    QueryBar
   },
   computed: {
     getCode() {
