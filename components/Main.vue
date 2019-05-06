@@ -13,21 +13,6 @@
       v-bind:code="item.code" 
       v-bind:key="item" 
     />
-    <!-- <QuerySection 
-        class="qryHeader" 
-        header="Top 10 Average 
-        Magnitude of Tornadoes" 
-        code="SELECT * FROM *" 
-        graph="Beautiful graphs" 
-    /> -->
-    <!-- <QuerySection
-                    v-for="q in QuerySections"
-                    v-bind:header="q.title"
-                    v-bind:imgSrc="q.imgSrc"
-                    v-bind:key="q.title"
-                >
-    </QuerySection> -->
-    <!-- v-bind:code="q.code" -->
   </main>
 </template>
 
@@ -38,8 +23,9 @@ import BRow from "bootstrap-vue/es/components/layout/row";
 import BCol from "bootstrap-vue/es/components/layout/col";
 import QuerySection from "./QuerySection";
 
+// https://github.com/nuxt/nuxt.js/issues/123#issuecomment-272246782
 import queries from '~/static/queries.json'
-console.log({queries})
+
 export default {
   name: "Main",
   components: {

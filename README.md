@@ -2,6 +2,12 @@
 
 > Database project Sp19
 
+## TODO
+- [ ] Setup `queries.json` file and populate
+- [ ] Make the "logo" responsive
+- [ ] Find a nice way to have both the graph and the code next to each other
+- [ ] Include d3.js in one of the queries :)
+
 ## Build Setup
 
 ``` bash
