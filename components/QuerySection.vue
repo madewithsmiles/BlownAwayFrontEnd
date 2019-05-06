@@ -5,8 +5,9 @@
         <div class="myQuerySection">
           <QueryHeader v-bind:header="header"/>
           <!-- <QueryImageResult v-bind:imgSrc="imgSrc"/> -->
-          <QueryCode v-bind:code="code"/>
-          <QueryGraph v-bind:graph="graph"/>
+          <QueryCode v-bind:code="getCode"/>
+          <!-- <QueryGraph v-bind:graph="graph"/> -->
+          <!-- <QueryBar v-bind:chartdata="chartdata" v-bind:options="options" /> -->
         </div>
       </b-col>
       <b-col></b-col>
@@ -20,7 +21,8 @@ import BCol from "bootstrap-vue/es/components/layout/col";
 import QueryHeader from "./QueryHeader";
 import QueryImageResult from "./QueryImageResult";
 import QueryCode from "./QueryCode";
-import QueryGraph from "./QueryGraph";
+import QueryBar from './QueryBar';
+// import QueryGraph from "./QueryGraph";
 
 export default {
   name: "QuerySection",
@@ -31,13 +33,34 @@ export default {
     QueryHeader,
     QueryImageResult,
     QueryCode,
-    QueryGraph
+    // QueryGraph
+    QueryBar,
+  },
+  computed: {
+    getCode() {
+      let currentCode = this.code;
+      let finalString = "";
+      currentCode.forEach(lineOfCode => {
+        finalString += lineOfCode;
+        finalString += "\n";
+      });
+
+      return finalString;
+    }
   },
   props: {
     header: String,
     imgSrc: String,
-    code: String,
-    graph: String
+    code: Array,
+    graph: String,
+    chartdata: {
+      type: Object,
+      default: null
+    },
+    options: {
+      type: Object,
+      default: null
+    }
   }
 };
 </script>

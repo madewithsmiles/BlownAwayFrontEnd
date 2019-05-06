@@ -6,7 +6,12 @@
       <b-col cols="9" class="module-border-wrap">
         <div class="module">
           <div class="logo">
-            <img alt="BlownAway - Omicron wow logo" src="~/assets/logo.svg" height="245px" style="margin: 50px">
+            <img 
+              alt="BlownAway - Omicron wow logo" 
+              src="~/assets/logo.svg" 
+              height="245px" 
+              style="margin: 50px"
+            >
           </div>
           <Main />
         </div>
@@ -23,7 +28,6 @@ import BAlert from 'bootstrap-vue/es/components/alert/alert'
 import BContainer from 'bootstrap-vue/es/components/layout/container'
 import BRow from 'bootstrap-vue/es/components/layout/row'
 import BCol from 'bootstrap-vue/es/components/layout/col'
-// import HelloWorld from './components/HelloWorld.vue'
 import Main from './Main.vue'
 import Footer from './Footer.vue'
 
