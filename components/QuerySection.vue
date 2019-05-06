@@ -7,7 +7,7 @@
         <!-- <QueryImageResult v-bind:imgSrc="imgSrc"/> -->
         <QueryCode v-bind:code="getCode"/>
         <!-- <QueryGraph v-bind:graph="graph"/> -->
-        <QueryBar v-bind:chartdata="chartdata" v-bind:options="options" style="height: 60vh; font-size: 18px"/>
+        <QueryBar v-bind:chartdata="chartdata" v-bind:options="options" style="height: 60vh"/>
       </div>
     </b-col>
     <b-col></b-col>
